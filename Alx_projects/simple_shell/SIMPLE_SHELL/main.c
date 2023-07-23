@@ -20,7 +20,7 @@ int main(int argc, char **argv, char **env)
 	while (1)
 	{
 		if (isatty(STDIN_FILENO))
-			write(STDOUT_FILENO, "$ ", 2);
+			write(STDOUT_FILENO, "user$ ", 6);
 		read = getline(&line, &len, stdin);
 		if (read == -1)
 		{
